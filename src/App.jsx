@@ -1,9 +1,13 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
+import NavMenu from "./components/NavMenu";
 
 function App() {
-  return <h1>Hello</h1>;
+  return (
+    <div className="z-0 bg-[#9b9b9b] h-screen">
+      <div className="flex justify-center items-center fixed bottom-0 w-full mb-6">
+        <NavMenu />
+      </div>
+    </div>
+  );
 }
 
 export default App;
