@@ -7,12 +7,12 @@ const tabs = [
     label: "Home",
   },
   {
-    id: "about",
-    label: "About",
-  },
-  {
     id: "projects",
     label: "Projects",
+  },
+  {
+    id: "about",
+    label: "About",
   },
 ];
 
@@ -26,7 +26,7 @@ export default function NavMenu() {
           onClick={() => setActiveTab(tab.id)}
           className={`${
             activeTab === tab.id ? "" : "hover:text-white/60"
-          } relative rounded-full px-3 py-1.5 text-2xl font-medium text-white outline-sky-400 transition focus-visible:outline-2`}
+          } relative rounded-full px-3 py-1.5 text-lg lg:text-2xl font-medium text-zinc-500 outline-sky-400 transition focus-visible:outline-2`}
           style={{ WebkitTapHighlightColor: "transparent" }}
         >
           {activeTab === tab.id && (

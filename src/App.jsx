@@ -1,12 +1,14 @@
-import NavMenu from "./components/NavMenu";
+import NavMenu from "./components/NavMenu.jsx";
+import Home from "./components/Home.jsx";
 
 function App() {
   return (
-    <div className="z-0 bg-[#9b9b9b] h-screen">
-      <div className="flex justify-center items-center fixed bottom-0 w-full mb-6">
+    <>
+      <Home />
+      <div className="flex justify-center items-center fixed bottom-0 w-full mb-8">
         <NavMenu />
       </div>
-    </div>
+    </>
   );
 }
 
