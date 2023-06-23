@@ -13,7 +13,7 @@ body {
   padding: 0;
   box-sizing: border-box;
   background-color: #f5f5fa;
-  background-size: 196px 256px;
+  background-size: 12em;
   background-image: repeating-linear-gradient(
     to right,
     #f0f0f0,
@@ -21,10 +21,4 @@ body {
     #fafafa 1.5px,
     #fafafa
   );
-}
-
-@media screen and min-width(768px) {
-  body {
-    background-size: 256px 256px;
-  }
 }
