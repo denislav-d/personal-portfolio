@@ -16,7 +16,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={figree.className + " bg-[#f5f5fa] overflow-x-hidden"}>
+      <body className={figree.className + " bg-light overflow-x-hidden"}>
         {children}
       </body>
     </html>
