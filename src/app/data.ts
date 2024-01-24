@@ -18,7 +18,8 @@ type Project = {
 
 export const navLinks: NavLink[] = [
   { id: 1, title: "Home", link: "/home" },
-  { id: 2, title: "Projects", link: "/projects" },
+  { id: 2, title: "About", link: "/about" },
+  { id: 3, title: "Credits", link: "/credits" },
 ];
 
 export const projects: Project[] = [
@@ -40,20 +41,20 @@ export const projects: Project[] = [
     type: "Next.js",
     image: vetemore,
   },
-  {
-    id: 3,
-    title: "Website Project",
-    date: "Feb 28, 2024",
-    description:
-      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor soluta doloribus sit assumenda hic facere.",
-    type: "Next.js",
-  },
-  {
-    id: 4,
-    title: "Website Project",
-    date: "May 31, 2023",
-    description:
-      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor soluta doloribus sit assumenda hic facere.",
-    type: "React",
-  },
+  // {
+  //   id: 3,
+  //   title: "Website Project",
+  //   date: "Feb 28, 2024",
+  //   description:
+  //     "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor soluta doloribus sit assumenda hic facere.",
+  //   type: "Next.js",
+  // },
+  // {
+  //   id: 4,
+  //   title: "Website Project",
+  //   date: "May 31, 2023",
+  //   description:
+  //     "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor soluta doloribus sit assumenda hic facere.",
+  //   type: "React",
+  // },
 ];

@@ -16,7 +16,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={figree.className + " bg-light"}>{children}</body>
+      <body
+        className={figree.className + "bg-light antialiased min-h-[100dvh]"}
+      >
+        {children}
+      </body>
     </html>
   );
 }

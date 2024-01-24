@@ -9,16 +9,16 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <>
+    <div className="bg-light fixed w-full h-14 z-40">
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="fixed top-2 right-2 z-50"
+        className="fixed top-1 right-2 z-50"
       >
-        <Hamburger direction="right" color="black" duration={0.3} size={26} />
+        <Hamburger direction="right" color="black" duration={0.3} size={28} />
       </button>
 
       <motion.div
-        className="fixed top-0 w-full h-screen p-8 text-black bg-light z-40"
+        className="fixed top-0 w-full h-[100dvh] p-8 text-black bg-light z-40"
         initial={false}
         animate={isOpen ? "open" : "closed"}
         variants={{
@@ -54,6 +54,6 @@ export default function Navbar() {
           ))}
         </div>
       </motion.div>
-    </>
+    </div>
   );
 }

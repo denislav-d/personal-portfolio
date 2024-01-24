@@ -11,9 +11,9 @@ export default function Home() {
         }}
         className="col-span-2 mt-16 lg:mt-36"
       >
-        <h1 className="text-[2.5rem] sm:text-5xl md:text-[3.5rem] lg:text-6xl font-bold tracking-tighter leading-10 text-dark">
+        <h1 className="text-[2.4rem] sm:text-5xl md:text-[3.5rem] lg:text-6xl font-bold tracking-tighter leading-10 text-dark">
           welcome
-          <span className="ml-1 -z-10 relative inline-block animate-wave origin-[70%_70%]">
+          <span className="ml-1 relative inline-block animate-wave origin-[70%_70%]">
             👋🏻
           </span>
           ,
@@ -27,7 +27,7 @@ export default function Home() {
           animate={{ opacity: 1, y: 0 }}
           transition={{
             duration: 0.85,
-            delay: 0.5,
+            delay: 0.25,
           }}
           className="mt-8 text-md lg:text-lg text-gray leading-6 max-w-screen-sm"
         >

@@ -6,10 +6,10 @@ import ProjectList from "@/app/components/ProjectList";
 
 export default function LandingPage() {
   return (
-    <>
+    <main vaul-drawer-wrapper="" className="bg-light h-[85rem]">
       <Navbar />
       <Hero />
       <ProjectList />
-    </>
+    </main>
   );
 }
