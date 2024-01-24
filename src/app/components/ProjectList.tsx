@@ -46,14 +46,20 @@ export default function ProjectList() {
                         <h1 className="font-medium text-2xl mb-4 text-dark">
                           Context
                         </h1>
-                        <p className="text-gray mb-8">
+                        <p className="text-gray mb-8 leading-6">
                           Introduction to the project...
                         </p>
                         <h1 className="font-medium text-2xl mb-4 text-dark">
-                          My Work
+                          The Client
                         </h1>
-                        <p className="text-gray mb-2">
-                          Introduction to the project...
+                        <p className="text-gray mb-8 leading-6">
+                          Introduction to the client...
+                        </p>
+                        <h1 className="font-medium text-2xl mb-4 text-dark">
+                          My Role
+                        </h1>
+                        <p className="text-gray mb-8 leading-6">
+                          Introduction to the role I had...
                         </p>
                       </div>
                     </section>
@@ -72,7 +78,7 @@ function Project({ article }: ProjectProps) {
   return (
     <>
       <div className="rounded-2xl shadow-lg relative aspect-[15/8] flex-shrink-0 hover:scale-[0.99] shadow-stone-600/[0.03] hover:shadow-md hover:shadow-stone-600/5 bg-gray-200 duration-300">
-        <div className="flex h-full w-full items-center justify-center outline-none">
+        <div className="flex h-full w-full items-center justify-center">
           <Image
             className="h-full w-full overflow-hidden object-contain rounded-2xl"
             src={article.image}

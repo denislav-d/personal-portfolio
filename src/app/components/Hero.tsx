@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 export default function Home() {
   return (
     <section className="container mx-auto px-6 md:px-24 lg:px-16 grid lg:grid-cols-3 grid-cols-1 max-w-screen-xl">
+      {/* <section className="container mx-auto px-6 md:px-24 lg:px-16 flex justify-center"> */}
       <motion.div
         initial={{ opacity: 0, y: -35 }}
         animate={{ opacity: 1, y: 0 }}

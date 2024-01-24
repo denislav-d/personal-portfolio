@@ -11,6 +11,8 @@ export default function Navbar() {
   return (
     <div className="bg-light fixed w-full h-14 z-40">
       <button
+        id="hamburger-menu"
+        aria-label="Hamburger Menu"
         onClick={() => setIsOpen(!isOpen)}
         className="fixed top-1 right-2 z-50"
       >
