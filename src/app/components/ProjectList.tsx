@@ -27,7 +27,7 @@ export default function ProjectList() {
                     <section className="p-4 bg-white rounded-t-[10px] flex-1">
                       <div className="mx-auto w-12 h-1.5 flex-shrink-0 rounded-full bg-zinc-300 mb-8" />
                       <div className="max-w-6xl mx-auto">
-                        <h1 className="font-bold mb-8 text-4xl text-dark">
+                        <h1 className="font-bold mb-8 text-4xl tracking-tighter text-dark">
                           {article.title}
                         </h1>
                         <h1 className="font-medium text-2xl mb-4 text-dark">

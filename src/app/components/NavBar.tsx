@@ -39,7 +39,7 @@ export default function Navbar() {
           },
         }}
       >
-        <div className="flex flex-col gap-8 justify-center font-bold text-5xl mt-32 z-50 list-none">
+        <div className="flex flex-col gap-2 md:gap-0 lg:gap-6 justify-center font-semibold text-[2.35rem] md:text-[3.5rem] lg:text-6xl md:px-16 xl:px-36 mt-32 z-50 list-none">
           {navLinks.map((item) => (
             <motion.li
               key={item.id}

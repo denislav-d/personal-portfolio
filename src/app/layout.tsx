@@ -1,8 +1,5 @@
 import type { Metadata } from "next";
-import { Figtree } from "next/font/google";
 import "./globals.css";
-
-const figree = Figtree({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -16,11 +13,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={figree.className + "bg-light antialiased min-h-[100dvh]"}
-      >
-        {children}
-      </body>
+      <body className="bg-light antialiased min-h-[100dvh]">{children}</body>
     </html>
   );
 }
