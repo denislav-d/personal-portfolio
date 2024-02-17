@@ -34,19 +34,32 @@ export default function ProjectList() {
                           Context
                         </h1>
                         <p className="text-gray mb-8 leading-6">
-                          Introduction to the project...
+                          {article.info_context}
                         </p>
-                        <h1 className="font-medium text-2xl mb-4 text-dark">
-                          The Client
-                        </h1>
-                        <p className="text-gray mb-8 leading-6">
-                          Introduction to the client...
-                        </p>
+                        {article.info_client ? (
+                          <>
+                            <h1 className="font-medium text-2xl mb-4 text-dark">
+                              The Client
+                            </h1>
+                            <p className="text-gray mb-8 leading-6">
+                              <a
+                                className="text-dark font-semibold underline hover:text-gray"
+                                href={article.client_link}
+                              >
+                                {article.client_name}
+                              </a>
+                              {article.info_client}
+                            </p>
+                          </>
+                        ) : (
+                          ""
+                        )}
+
                         <h1 className="font-medium text-2xl mb-4 text-dark">
                           My Role
                         </h1>
                         <p className="text-gray mb-8 leading-6">
-                          Introduction to the role I had...
+                          {article.info_myrole}
                         </p>
                       </div>
                     </section>
