@@ -9,18 +9,18 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className="bg-light fixed w-full h-14 z-40">
+    <div className="bg-none fixed w-full h-14 z-40 top-0">
       <button
         id="hamburger-menu"
         aria-label="Hamburger Menu"
         onClick={() => setIsOpen(!isOpen)}
-        className="fixed top-1 right-2 z-50"
+        className="fixed top-4 right-4 z-50"
       >
-        <Hamburger direction="right" color="black" duration={0.3} size={28} />
+        <Hamburger direction="right" color="light" duration={0.3} size={28} />
       </button>
 
       <motion.div
-        className="fixed top-0 w-full h-[100dvh] p-8 text-black bg-light z-40"
+        className="fixed top-0 w-full h-[100dvh] p-1.5 bg-dark text-light z-40"
         initial={false}
         animate={isOpen ? "open" : "closed"}
         variants={{
@@ -39,7 +39,7 @@ export default function Navbar() {
           },
         }}
       >
-        <div className="flex flex-col gap-2 md:gap-0 lg:gap-6 justify-center font-semibold text-[2.35rem] md:text-[3.5rem] lg:text-6xl md:px-16 xl:px-36 mt-32 z-50 list-none">
+        <div className="flex flex-col gap-2 md:gap-0 lg:gap-6 justify-center font-semibold text-[2.35rem] md:text-[3.5rem] lg:text-6xl px-4 md:px-16 xl:px-36 mt-32 z-50 list-none">
           {navLinks.map((item) => (
             <motion.li
               key={item.id}
