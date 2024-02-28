@@ -8,17 +8,6 @@ import { projects } from "@/app/data";
 export default function ProjectList() {
   const [isActive, setIsActive] = useState(false);
 
-  const [threshold, setThreshold] = useState(450); // Initial threshold for desktop
-
-  // Update threshold based on screen size
-  useEffect(() => {
-    const handleResize = () => {
-      setThreshold(window.innerWidth >= 768 ? 450 : 300); // Adjust threshold for mobile
-    };
-    window.addEventListener("resize", handleResize);
-    return () => window.removeEventListener("resize", handleResize);
-  }, []);
-
   return (
     <section className="container mx-auto px-6 md:px-24 lg:px-16 mt-24 lg:mt-36 max-w-screen-xl">
       <div className="grid grid-cols-1 gap-16 lg:gap-20 sm:mb-36 sm:grid-cols-2 lg:grid-cols-3">
