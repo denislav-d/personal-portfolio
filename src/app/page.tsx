@@ -6,7 +6,7 @@ import ProjectList from "@/app/components/ProjectList";
 
 export default function LandingPage() {
   return (
-    <main vaul-drawer-wrapper="" className="bg-dark min-h-[55rem]">
+    <main className="bg-dark min-h-[55rem]">
       <Navbar />
       <Hero />
       <ProjectList />

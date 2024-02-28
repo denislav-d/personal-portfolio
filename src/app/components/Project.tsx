@@ -1,10 +1,14 @@
-interface Project {
+type Project = {
   id: number;
   title: string;
-  type: string;
   description: string;
-  image?: any;
-}
+  type: string;
+  info_context: string;
+  info_client?: string;
+  info_myrole: string;
+  client_link?: string;
+  client_name?: string;
+};
 
 interface ProjectProps {
   article: Project;

@@ -9,14 +9,14 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className="bg-none fixed w-full h-14 z-40 top-0">
+    <div className="bg-none backdrop-blur-sm fixed w-full h-14 z-40 top-0">
       <button
         id="hamburger-menu"
         aria-label="Hamburger Menu"
         onClick={() => setIsOpen(!isOpen)}
-        className="fixed top-4 right-4 z-50"
+        className="fixed top-1 right-2 z-50"
       >
-        <Hamburger direction="right" color="light" duration={0.3} size={28} />
+        <Hamburger direction="right" color="#FAF9F6" duration={0.3} size={28} />
       </button>
 
       <motion.div
