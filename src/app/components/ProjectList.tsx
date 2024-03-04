@@ -1,15 +1,17 @@
+import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Project from "@/app/components/Project";
 import ProjectDescription from "./ProjectDescription";
-import { useState } from "react";
 
 import { projects } from "@/app/data";
 
 export default function ProjectList() {
+  const [isDrawerOpen, setIsDrawerOpen] = useState(false);
   const [activeProjectId, setActiveProjectId] = useState(null);
 
   const handleProjectClick = (projectId: any) => {
-    setActiveProjectId(projectId === activeProjectId ? null : projectId);
+    setActiveProjectId(projectId);
+    setIsDrawerOpen(true);
   };
 
   return (
@@ -29,7 +31,7 @@ export default function ProjectList() {
           >
             <Project article={article} />
             <AnimatePresence>
-              {activeProjectId === article.id && (
+              {isDrawerOpen && activeProjectId === article.id && (
                 <motion.section
                   transition={{
                     duration: 0.2,
@@ -47,7 +49,10 @@ export default function ProjectList() {
                   drag="y"
                   dragConstraints={{ top: 0, bottom: 0 }}
                   onDragEnd={(_, info) => {
-                    if (info.offset.y > 400) setActiveProjectId(null);
+                    if (info.offset.y > 400) {
+                      setActiveProjectId(null);
+                      setIsDrawerOpen(false);
+                    }
                   }}
                   className="rounded-t-[10px] fixed bottom-0 left-0 right-0 p-4 bg-dark z-50 h-[92%]"
                 >
