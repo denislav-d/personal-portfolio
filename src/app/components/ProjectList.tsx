@@ -1,12 +1,16 @@
 import { motion, AnimatePresence } from "framer-motion";
 import Project from "@/app/components/Project";
 import ProjectDescription from "./ProjectDescription";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 
 import { projects } from "@/app/data";
 
 export default function ProjectList() {
-  const [isActive, setIsActive] = useState(false);
+  const [activeProjectId, setActiveProjectId] = useState(null);
+
+  const handleProjectClick = (projectId: any) => {
+    setActiveProjectId(projectId === activeProjectId ? null : projectId);
+  };
 
   return (
     <section className="container mx-auto px-6 md:px-24 lg:px-16 mt-24 lg:mt-36 max-w-screen-xl">
@@ -21,11 +25,11 @@ export default function ProjectList() {
               duration: 0.5,
               delay: article.id * 0.35,
             }}
-            onClick={() => setIsActive(true)}
+            onClick={() => handleProjectClick(article.id)}
           >
             <Project article={article} />
             <AnimatePresence>
-              {isActive && (
+              {activeProjectId === article.id && (
                 <motion.section
                   transition={{
                     duration: 0.2,
@@ -43,7 +47,7 @@ export default function ProjectList() {
                   drag="y"
                   dragConstraints={{ top: 0, bottom: 0 }}
                   onDragEnd={(_, info) => {
-                    if (info.offset.y > 400) setIsActive(false);
+                    if (info.offset.y > 400) setActiveProjectId(null);
                   }}
                   className="rounded-t-[10px] fixed bottom-0 left-0 right-0 p-4 bg-dark z-50 h-[92%]"
                 >

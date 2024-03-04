@@ -38,16 +38,16 @@ export const projects: Project[] = [
     client_link: "https://citriclabs.xyz/",
     client_name: "Citric Labs",
   },
-  // {
-  //   id: 2,
-  //   title: "Vetemòre",
-  //   description:
-  //     "Vetemòre offers a divergence from typical high-fashion shopping websites by prioritizing design and delivering comprehensive information.",
-  //   type: "Next.js",
-  //   info_context:
-  //     "Vetemòre started as a response to my frustration as a fashion enthusiast. When browsing online fashion stores I often noticed the prioritization of profit from these websites, which is pretty understandable, but I have always felt the need of knowing more before I buy something. This curiousity always led me to an infinite search for more information about a certain piece, which I was interested about and considered buying. The outcome most of the times was barely any information or many suspicious websites, filled with untrustworthy content. This is why I came up with the idea of Vetemòre - 'vêtements' in french means 'clothes' and '-more' - the website focusing on more details about the clothes. The goal of Vetemòre is to provide enthusiasts and people who care about what they buy with more information about the designer, designer character and way of thinking, brand, design process and goal, sustainability, inspiration and etc.",
-  //   info_myrole: "",
-  // },
+  {
+    id: 2,
+    title: "Vetemòre",
+    description:
+      "Vetemòre offers a divergence from typical high-fashion shopping websites by prioritizing design and delivering comprehensive information.",
+    type: "Next.js",
+    info_context:
+      "Vetemòre started as a response to my frustration as a fashion enthusiast. When browsing online fashion stores I often noticed the prioritization of profit from these websites, which is pretty understandable, but I have always felt the need of knowing more before I buy something. This curiousity always led me to an infinite search for more information about a certain piece, which I was interested about and considered buying. The outcome most of the times was barely any information or many suspicious websites, filled with untrustworthy content. This is why I came up with the idea of Vetemòre - 'vêtements' in french means 'clothes' and '-more' - the website focusing on more details about the clothes. The goal of Vetemòre is to provide enthusiasts and people who care about what they buy with more information about the designer, designer character and way of thinking, brand, design process and goal, sustainability, inspiration and etc.",
+    info_myrole: "",
+  },
   // {
   //   id: 3,
   //   title: "Website Project",
