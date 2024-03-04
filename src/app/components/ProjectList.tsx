@@ -5,8 +5,7 @@ import ProjectDescription from "./ProjectDescription";
 
 import { projects } from "@/app/data";
 
-export default function ProjectList() {
-  const [isDrawerOpen, setIsDrawerOpen] = useState(false);
+export default function ProjectList({ isDrawerOpen, setIsDrawerOpen }: any) {
   const [activeProjectId, setActiveProjectId] = useState(null);
 
   const handleProjectClick = (projectId: any) => {

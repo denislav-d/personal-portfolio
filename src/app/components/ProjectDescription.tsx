@@ -17,7 +17,7 @@ interface ProjectProps {
 export default function ProjectDescription({ article }: ProjectProps) {
   return (
     <>
-      <div className="mx-auto w-12 h-1.5 flex-shrink-0 rounded-full bg-zinc-300 mb-8 overflow-y-scroll" />
+      <div className="mx-auto w-12 h-1.5 flex-shrink-0 rounded-full bg-zinc-300 mb-8 overflow-y-scroll z-20" />
       <article className="max-w-6xl mx-auto">
         <h1 className="font-semibold mb-8 text-4xl tracking-tighter text-light">
           {article.title}
