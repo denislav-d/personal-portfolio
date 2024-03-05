@@ -10,7 +10,9 @@ export default function LandingPage() {
   return (
     <main className="bg-dark min-h-[55rem]">
       <div
-        className={`${isDrawerOpen ? "opacity-50 pointer-events-none" : ""}`}
+        className={`${
+          isDrawerOpen ? "backdrop-blur-sm opacity-50 pointer-events-none" : ""
+        }`}
       >
         <Navbar />
         <Hero />

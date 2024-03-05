@@ -14,7 +14,7 @@ export default function ProjectList({ isDrawerOpen, setIsDrawerOpen }: any) {
   };
 
   return (
-    <section className="container mx-auto px-6 md:px-24 lg:px-16 mt-24 lg:mt-36 max-w-screen-xl">
+    <section className="container mx-auto px-6 md:px-24 lg:px-16 mt-20 lg:mt-32 max-w-screen-xl">
       <div className="grid grid-cols-1 gap-16 lg:gap-20 sm:mb-36 sm:grid-cols-2 lg:grid-cols-3">
         {projects.map((article) => (
           <motion.article
@@ -48,13 +48,14 @@ export default function ProjectList({ isDrawerOpen, setIsDrawerOpen }: any) {
                   drag="y"
                   dragConstraints={{ top: 0, bottom: 0 }}
                   onDragEnd={(_, info) => {
-                    if (info.offset.y > 400) {
+                    if (info.offset.y > 300) {
                       setActiveProjectId(null);
                       setIsDrawerOpen(false);
                     }
                   }}
-                  className="rounded-t-[10px] fixed bottom-0 left-0 right-0 p-4 bg-dark z-50 h-[92%]"
+                  className="rounded-t-[10px] fixed bottom-0 left-0 right-0 py-4 px-6 bg-dark z-50 h-[92%] overflow-y-auto border-t border-light"
                 >
+                  <div className="mx-auto w-12 h-1.5 flex-shrink-0 rounded-full bg-zinc-300 mb-8" />
                   <ProjectDescription article={article} />
                 </motion.section>
               )}
