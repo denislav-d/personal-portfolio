@@ -20,7 +20,7 @@ export default function Navbar() {
       </button>
 
       <motion.div
-        className="fixed top-0 w-full h-[100dvh] p-1.5 bg-dark text-light z-40"
+        className="fixed top-0 w-full h-[100dvh] bg-dark text-light z-40"
         initial={false}
         animate={isOpen ? "open" : "closed"}
         variants={{
@@ -39,7 +39,7 @@ export default function Navbar() {
           },
         }}
       >
-        <div className="flex flex-col gap-2 md:gap-0 lg:gap-6 justify-center font-semibold text-[2.35rem] md:text-[3.5rem] lg:text-6xl px-4 md:px-16 xl:px-36 mt-32 z-50 list-none">
+        <div className="flex flex-col gap-2 md:gap-0 lg:gap-6 justify-center font-semibold text-[2.35rem] md:text-[3.5rem] lg:text-6xl px-6 md:px-24 xl:px-44 mt-40 z-50 list-none">
           {navLinks.map((item) => (
             <motion.li
               key={item.id}
@@ -51,7 +51,12 @@ export default function Navbar() {
                 },
               }}
             >
-              <Link href={item.link}>{item.title}</Link>
+              <Link
+                className="inline-block cursor-pointer hover:scale-[0.97] duration-300"
+                href={item.link}
+              >
+                {item.title}
+              </Link>
             </motion.li>
           ))}
         </div>

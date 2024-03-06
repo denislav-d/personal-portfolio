@@ -17,9 +17,8 @@ type Project = {
 };
 
 export const navLinks: NavLink[] = [
-  { id: 1, title: "Home", link: "/home" },
-  { id: 2, title: "About", link: "/about" },
-  { id: 3, title: "Credits", link: "/credits" },
+  { id: 1, title: "GitHub", link: "https://github.com/denislav-d" },
+  { id: 2, title: "LinkedIn", link: "https://www.linkedin.com/in/denislavd/" },
 ];
 
 export const projects: Project[] = [
@@ -46,7 +45,8 @@ export const projects: Project[] = [
     type: "Next.js",
     info_context:
       "Vetemòre started as a response to my frustration as a fashion enthusiast. When browsing online fashion stores I often noticed the prioritization of profit from these websites, which is pretty understandable, but I have always felt the need of knowing more before I buy something. This curiousity always led me to an infinite search for more information about a certain piece, which I was interested about and considered buying. The outcome most of the times was barely any information or many suspicious websites, filled with untrustworthy content. This is why I came up with the idea of Vetemòre - 'vêtements' in french means 'clothes' and '-more' - the website focusing on more details about the clothes. The goal of Vetemòre is to provide enthusiasts and people who care about what they buy with more information about the designer, designer character and way of thinking, brand, design process and goal, sustainability, inspiration and etc.",
-    info_myrole: "",
+    info_myrole:
+      "I developed a responsive user interface tailored for an online fashion store, with a primary focus on improving the accessibility of product and designer information. This involved creating a Python web scraper to extract existing product data, which was then saved in a .csv file, fetched and rendered onto the user interface. Additionally, I implemented sorting and filtering functionalities for products spanning various categories, enhancing the overall user experience by enabling smoother navigation and selection processes.",
   },
   // {
   //   id: 3,
