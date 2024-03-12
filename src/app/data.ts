@@ -18,7 +18,7 @@ type Project = {
 
 export const navLinks: NavLink[] = [
   { id: 1, title: "GitHub", link: "https://github.com/denislav-d" },
-  { id: 2, title: "LinkedIn", link: "https://www.linkedin.com/in/denislavd/" },
+  { id: 2, title: "LinkedIn", link: "https://www.linkedin.com/in/denislavd" },
 ];
 
 export const projects: Project[] = [
