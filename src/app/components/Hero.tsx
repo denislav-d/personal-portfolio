@@ -15,7 +15,7 @@ export default function Home() {
           <br />
           <span className="lg:ml-[5.75rem]">a design driven developer.</span>
         </h1>
-        <p className="mt-12 text-md lg:text-[1.1rem] text-light leading-6 before:inline-block before:w-[.85rem] before:h-[.85rem] before:bg-white before:mr-2 before:content-['']">
+        <p className="mt-12 text-base lg:text-[1.1rem] text-light leading-6 before:inline-block before:w-[.85rem] before:h-[.85rem] before:bg-white before:mr-2 before:content-['']">
           I am a student, who is currently pursuing a university degree in the
           Netherlands. Having a long-time ambition for all types of design and
           my rapidly growing interest and knowledge in the web development

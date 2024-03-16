@@ -23,7 +23,7 @@ export default function Project({ article }: ProjectProps) {
         </h1>
         <h2 className="font-medium">{article.type}</h2>
       </div>
-      <div className="mt-2 text-light text-[1.1rem] outline-none">
+      <div className="mt-2 text-light text-base lg:text-[1.1rem] outline-none">
         <div>{article.description}</div>
       </div>
     </div>
