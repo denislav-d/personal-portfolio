@@ -16,7 +16,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="bg-dark antialiased">
+      <body className="bg-light antialiased">
         {children}
         <Analytics />
       </body>

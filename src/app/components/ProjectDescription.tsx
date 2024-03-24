@@ -2,7 +2,6 @@ type Project = {
   id: number;
   title: string;
   description: string;
-  type: string;
   info_context: string;
   info_client?: string;
   info_myrole: string;

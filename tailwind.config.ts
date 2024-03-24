@@ -10,7 +10,7 @@ const config: Config = {
     extend: {
       colors: {
         light: "#FAF9F6",
-        dark: "#000000",
+        dark: "#222222",
       },
 
       keyframes: {
