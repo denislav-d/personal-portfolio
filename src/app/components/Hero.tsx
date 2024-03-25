@@ -9,7 +9,7 @@ export default function Home() {
           👋🏻
         </span>
         ,<br /> my name is Denislav Dimitrov, <br /> a design driven developer,
-        <br /> pursuing an university ICT degree in the Netherlands.
+        <br /> currently pursuing a university degree in the Netherlands.
       </h1>
     </section>
   );
