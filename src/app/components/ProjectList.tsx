@@ -6,7 +6,7 @@ import { projects } from "@/app/data";
 
 export default function ProjectList() {
   return (
-    <section className="container mx-auto mb-36 mt-12 grid grid-cols-1 gap-8 px-12 md:w-full md:min-w-[512px] md:max-w-xl">
+    <section className="container mx-auto mb-36 mt-12 grid grid-cols-1 gap-8 px-10 md:w-full md:min-w-[512px] md:max-w-xl">
       {projects.map((project) => (
         <motion.article
           key={project.id}

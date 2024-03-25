@@ -19,7 +19,7 @@ export default function Project({ params }: { params: { id: string } }) {
         ))
       ) : (
         <>
-          <section className="container mx-auto mb-28 mt-24 grid grid-cols-1 gap-8 px-12 md:w-full md:min-w-[512px] md:max-w-xl lg:mt-36">
+          <section className="container mx-auto mb-28 mt-24 grid grid-cols-1 gap-8 px-10 md:w-full md:min-w-[512px] md:max-w-xl lg:mt-36">
             <DescriptionBlock
               title="project not found 🚫"
               description="oops, maybe try one of these projects instead, or going back to the"
