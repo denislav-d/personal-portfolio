@@ -11,6 +11,7 @@ const config: Config = {
       colors: {
         light: "#FAF9F6",
         dark: "#222222",
+        gray: "#838383",
       },
 
       keyframes: {

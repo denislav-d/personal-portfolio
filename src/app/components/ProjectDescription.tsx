@@ -2,24 +2,23 @@
 
 import { motion } from "framer-motion";
 import DescriptionBlock from "./DescriptionBlock";
-
-type Project = {
-  id: number;
-  title: string;
-  subheading: string;
-  description: string;
-  context_description: string;
-  info_client?: string;
-  myrole_description: string;
-  client_link?: string;
-  client_name?: string;
-};
+import { Project as ProjectTypes } from "@/app/data";
+import BackButton from "./BackButton";
 
 interface ProjectProps {
-  project: Project;
+  project: ProjectTypes;
 }
 
-export default function ProjectDescription({ project }: ProjectProps) {
+export default function ProjectDescription({
+  project: {
+    title,
+    subheading,
+    context_description,
+    myrole_description,
+    link_before,
+    link_client,
+  },
+}: ProjectProps) {
   return (
     <motion.article
       viewport={{ once: true }}
@@ -31,23 +30,28 @@ export default function ProjectDescription({ project }: ProjectProps) {
         type: "spring",
         damping: 14,
       }}
-      className="container mx-auto mt-12 grid grid-cols-1 gap-8 px-12 sm:mb-36 md:w-full md:min-w-[512px] md:max-w-xl lg:mt-24"
+      className="container mx-auto mb-36 mt-24 grid grid-cols-1 gap-8 px-12 md:w-full md:min-w-[512px] md:max-w-xl lg:mt-36"
     >
       <h1 className="font-serif text-lg font-medium tracking-tight text-dark before:mr-2 before:inline-block before:h-[0.6rem] before:w-[0.6rem] before:bg-dark before:content-['']">
-        {project.title}
+        {title}
         <br />
-        <span className="font-sans text-base font-normal italic tracking-normal opacity-50">
-          {project.subheading}
+        <span className="font-sans text-base font-normal italic tracking-normal text-gray">
+          {subheading}
         </span>
       </h1>
-      <DescriptionBlock
-        title="context"
-        description={project.context_description}
-      />
-      <DescriptionBlock
-        title="my role"
-        description={project.myrole_description}
-      />
+      {link_before ? (
+        <DescriptionBlock
+          title="context"
+          link={link_client}
+          link_before={link_before}
+          description={context_description}
+        />
+      ) : (
+        <DescriptionBlock title="context" description={context_description} />
+      )}
+
+      <DescriptionBlock title="my role" description={myrole_description} />
+      <BackButton />
     </motion.article>
   );
 }

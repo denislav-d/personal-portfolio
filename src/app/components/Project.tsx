@@ -1,17 +1,7 @@
-type Project = {
-  id: number;
-  title: string;
-  subheading: string;
-  description: string;
-  context_description: string;
-  info_client?: string;
-  myrole_description: string;
-  client_link?: string;
-  client_name?: string;
-};
+import { Project as ProjectTypes } from "@/app/data";
 
 interface ProjectProps {
-  project: Project;
+  project: ProjectTypes;
 }
 
 export default function Project({ project }: ProjectProps) {

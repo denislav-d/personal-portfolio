@@ -1,37 +1,34 @@
-type Project = {
+export type Project = {
   id: number;
-  link: string;
   title: string;
+  link: string;
+  link_client?: string;
+  link_before?: string;
   subheading: string;
   description: string;
   context_description: string;
-  info_client?: string;
   myrole_description: string;
-  client_link?: string;
-  client_name?: string;
 };
 
 export const projects: Project[] = [
   {
     id: 1,
-    link: "spotlight",
     title: "spotlight",
+    link: "spotlight",
+    link_client: "https://citriclabs.xyz/",
+    link_before: "citric labs",
     subheading: "personalized events, just a couple of clicks away!",
     description:
       "a progressive web application which provides you with event recommendations based on your music taste.",
     context_description:
-      "the project started as an initial idea of Citric Labs, which me and my team further developed and realised. The application allows you to login with your Spotify account and provides you with recommendations of events which you might like based on your music taste. It also lets you chose the playlists to get recommendations on, since you might be sharing the account with someone else or are just in a specific mood. :)",
-    info_client:
-      "is a startup company working on solutions to improve community interaction and understanding inside Creative Industries.",
+      "'s initial idea set the foundation for the project, which me and my team further developed and realised. The application allows you to login with your Spotify account and provides you with recommendations of events which you might like based on your music taste. It also lets you chose the playlists to get recommendations on, since you might be sharing the account with someone else or are just in a specific mood. :)",
     myrole_description:
       "my role for this project was assigned as the lead front-end developer and my responsibility was to create a consistent user interface and layout while implementing the elements from the designer-provided wireframes. By closely referencing these wireframes, I worked collaboratively with the designer to translate our stakeholder's vision into a functional and intuitive interface, ensuring alignment with the project's objectives and user expectations.",
-    client_link: "https://citriclabs.xyz/",
-    client_name: "Citric Labs",
   },
   {
     id: 2,
-    link: "vetemore",
     title: "vetemòre",
+    link: "vetemore",
     subheading: "a response to my frustration as a fashion enthusiast...",
     description:
       "a divergence from typical high-fashion shopping websites, prioritizing design and delivering comprehensive information.",
