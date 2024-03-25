@@ -1,5 +1,6 @@
 type Project = {
   id: number;
+  Link: string;
   title: string;
   description: string;
   info_context: string;
@@ -12,11 +13,12 @@ type Project = {
 export const projects: Project[] = [
   {
     id: 1,
+    Link: "spotlight",
     title: "spotlight",
     description:
       "a progressive web application which provides you with event recommendations based on your music taste.",
     info_context:
-      "Spotlight started as an initial idea of Citric Labs, which me and my team further developed and realised. The application allows you to login with your Spotify account and provides you with recommendations of events which you might like based on your music taste. It also lets you chose the playlists to get recommendations on, since you might be sharing the account with someone else or are just in a specific mood. :)",
+      "the project started as an initial idea of Citric Labs, which me and my team further developed and realised. The application allows you to login with your Spotify account and provides you with recommendations of events which you might like based on your music taste. It also lets you chose the playlists to get recommendations on, since you might be sharing the account with someone else or are just in a specific mood. :)",
     info_client:
       "is a startup company working on solutions to improve community interaction and understanding inside Creative Industries.",
     info_myrole:
@@ -26,6 +28,7 @@ export const projects: Project[] = [
   },
   {
     id: 2,
+    Link: "vetemore",
     title: "vetemòre",
     description:
       "a divergence from typical high-fashion shopping websites, prioritizing design and delivering comprehensive information.",
