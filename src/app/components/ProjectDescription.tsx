@@ -60,7 +60,7 @@ export default function ProjectDescription({
       className="container mx-auto mb-36 mt-24 grid grid-cols-1 gap-8 px-10 md:w-full md:min-w-[512px] md:max-w-xl lg:mt-36"
     >
       <motion.h1
-        className="font-serif text-lg font-medium tracking-tight text-dark before:mr-2 before:inline-block before:h-[0.6rem] before:w-[0.6rem] before:bg-dark before:content-['']"
+        className="font-serif text-lg font-medium tracking-tight text-dark  before:mr-2 before:inline-block before:h-[0.6rem] before:w-[0.6rem] before:bg-dark before:content-['']"
         variants={itemVariants}
       >
         {title}
