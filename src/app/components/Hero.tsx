@@ -1,5 +1,5 @@
 export default function Home() {
-  const isMobile = window.innerWidth <= 768;
+  // const isMobile = window.innerWidth <= 768;
 
   return (
     <section className="container z-10 mx-auto mb-20 mt-20 flex flex-col px-10 md:w-full md:min-w-[512px] md:max-w-xl lg:mt-36">
