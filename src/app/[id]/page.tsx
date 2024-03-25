@@ -3,7 +3,7 @@ import ProjectDescription from "../components/ProjectDescription";
 
 export default function Project({ params }: { params: { id: string } }) {
   const filteredProjects = projects.filter(
-    (project) => project.Link === params.id
+    (project) => project.link === params.id
   );
 
   return (
