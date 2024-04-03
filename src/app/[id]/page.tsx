@@ -1,8 +1,8 @@
 "use client";
-import { projects } from "@/app/data";
-import ProjectDescription from "../components/ProjectDescription";
-import DescriptionBlock from "../components/DescriptionBlock";
-import ProjectList from "../components/ProjectList";
+import { projects } from "@/data/data";
+import ProjectDescription from "@/components/ProjectDescription";
+import DescriptionBlock from "@/components/DescriptionBlock";
+import ProjectList from "@/components/ProjectList";
 
 export default function Project({ params }: { params: { id: string } }) {
   const filteredProjects = projects.filter(

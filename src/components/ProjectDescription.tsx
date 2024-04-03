@@ -1,9 +1,11 @@
 "use client";
 
 import { motion } from "framer-motion";
-import DescriptionBlock from "./DescriptionBlock";
-import { Project as ProjectTypes } from "@/app/data";
-import BackButton from "./BackButton";
+
+import DescriptionBlock from "@/components/DescriptionBlock";
+import BackButton from "@/components/BackButton";
+
+import { Project as ProjectTypes } from "@/data/data";
 
 interface ProjectProps {
   project: ProjectTypes;

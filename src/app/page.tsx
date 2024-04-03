@@ -1,6 +1,6 @@
 "use client";
-import Hero from "@/app/components/Hero";
-import ProjectList from "@/app/components/ProjectList";
+import Hero from "@/components/Hero";
+import ProjectList from "@/components/ProjectList";
 
 export default function LandingPage() {
   return (

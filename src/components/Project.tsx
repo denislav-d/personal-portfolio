@@ -1,4 +1,4 @@
-import { Project as ProjectTypes } from "@/app/data";
+import { Project as ProjectTypes } from "@/data/data";
 
 interface ProjectProps {
   project: ProjectTypes;

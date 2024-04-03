@@ -1,8 +1,8 @@
 import { motion } from "framer-motion";
 import Link from "next/link";
-import Project from "@/app/components/Project";
+import Project from "@/components/Project";
 
-import { projects } from "@/app/data";
+import { projects } from "@/data/data";
 
 export default function ProjectList() {
   return (
