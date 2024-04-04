@@ -3,7 +3,13 @@ import { notFound } from "next/navigation";
 import ProjectDescription from "@/components/ProjectDescription";
 import { projects } from "@/data/data";
 
-export default function Project({ params }: { params: { id: string } }) {
+interface ProjectProps {
+  params: {
+    id: string;
+  };
+}
+
+export default function Project({ params }: ProjectProps) {
   const filteredProjects = projects.filter(
     (project) => project.link === params.id
   );
@@ -21,4 +27,12 @@ export default function Project({ params }: { params: { id: string } }) {
       ))}
     </>
   );
+}
+
+export function generateStaticParams() {
+  return projects.map((project) => {
+    return {
+      id: project.id.toString(),
+    };
+  });
 }
