@@ -5,6 +5,7 @@ type DescriptionBlockProps = {
   description: string;
   link?: string;
   link_before?: string;
+  link_after?: string;
 };
 
 export default function DescriptionBlock({
@@ -12,6 +13,7 @@ export default function DescriptionBlock({
   description,
   link,
   link_before,
+  link_after,
 }: DescriptionBlockProps) {
   return (
     <div className="flex flex-col gap-2">
@@ -24,7 +26,14 @@ export default function DescriptionBlock({
         ) : (
           ""
         )}
-        {description}
+        {description}{" "}
+        {link_after ? (
+          <Link className="underline" href={`${link}`}>
+            {link_after}
+          </Link>
+        ) : (
+          ""
+        )}
       </p>
     </div>
   );
