@@ -1,6 +1,6 @@
 export default function Home() {
   return (
-    <section className="container z-10 mx-auto mb-20 mt-20 flex flex-col px-10 md:w-full md:min-w-[512px] md:max-w-xl lg:mt-36">
+    <section className="container z-10 mx-auto mb-20 flex flex-col px-10 md:w-full md:min-w-[512px] md:max-w-xl">
       <h1 className="text-base tracking-wide text-dark before:mr-2 before:inline-block before:h-[0.6rem] before:w-[0.6rem] before:bg-dark before:content-['']">
         <span className="font-serif text-lg font-medium tracking-tight">
           welcome

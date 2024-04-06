@@ -4,7 +4,7 @@ import ProjectList from "@/components/ProjectList";
 
 export default function LandingPage() {
   return (
-    <main>
+    <main className="mt-24 lg:mt-36">
       <Hero />
       <ProjectList />
     </main>
