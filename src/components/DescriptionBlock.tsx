@@ -5,7 +5,6 @@ type DescriptionBlockProps = {
   description: string;
   link?: string;
   link_before?: string;
-  link_after?: string;
 };
 
 export default function DescriptionBlock({
@@ -13,15 +12,11 @@ export default function DescriptionBlock({
   description,
   link,
   link_before,
-  link_after,
 }: DescriptionBlockProps) {
   return (
-    <>
-      <h1 className="text-base tracking-wide text-dark before:mr-2 before:inline-block before:h-[0.6rem] before:w-[0.6rem] before:bg-dark before:content-['']">
-        <span className="font-serif text-lg font-medium tracking-tight">
-          {title}
-        </span>
-        <br />
+    <div className="flex flex-col gap-2">
+      <h1 className="text-title">{title}</h1>
+      <p className="text-secondary">
         {link_before ? (
           <Link className="underline" href={`${link}`}>
             {link_before}
@@ -29,11 +24,8 @@ export default function DescriptionBlock({
         ) : (
           ""
         )}
-        {description}{" "}
-        <Link className="underline" href={`${link}`}>
-          {link_after}
-        </Link>
-      </h1>
-    </>
+        {description}
+      </p>
+    </div>
   );
 }

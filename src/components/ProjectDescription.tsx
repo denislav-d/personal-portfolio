@@ -61,16 +61,13 @@ export default function ProjectDescription({
       animate="visible"
       className="container mx-auto mb-36 mt-24 grid grid-cols-1 gap-8 px-10 md:w-full md:min-w-[512px] md:max-w-xl lg:mt-36"
     >
-      <motion.h1
-        className="font-serif text-lg font-medium tracking-tight text-dark  before:mr-2 before:inline-block before:h-[0.6rem] before:w-[0.6rem] before:bg-dark before:content-['']"
-        variants={itemVariants}
-      >
-        {title}
-        <br />
-        <span className="font-sans text-base font-normal italic tracking-normal text-gray">
+      <motion.div className="flex flex-col gap-2" variants={itemVariants}>
+        <h1 className="text-title">{title}</h1>
+        <p className="font-sans text-base font-normal italic tracking-normal text-gray">
           {subheading}
-        </span>
-      </motion.h1>
+        </p>
+      </motion.div>
+
       {link_before ? (
         <motion.div variants={itemVariants}>
           <DescriptionBlock

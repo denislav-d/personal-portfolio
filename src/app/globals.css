@@ -13,3 +13,23 @@
 html {
   font-family: "Mona Sans";
 }
+
+@layer components {
+  .text-title {
+    @apply font-serif text-lg font-medium tracking-tight text-dark before:mr-2 before:inline-block before:h-[0.6rem] before:w-[0.6rem] before:bg-dark before:content-[''];
+  }
+
+  .text-secondary {
+    @apply text-base leading-6 tracking-wide text-dark;
+  }
+
+  br.responsive {
+    @apply inline;
+  }
+
+  @media (min-width: 640px) {
+    br.responsive {
+      @apply hidden;
+    }
+  }
+}
