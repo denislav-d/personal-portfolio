@@ -1,7 +1,7 @@
-import { Project as ProjectTypes } from "@/data/data";
+import { ProjectType } from "@/data/data";
 
 interface ProjectProps {
-  project: ProjectTypes;
+  project: ProjectType;
 }
 
 export default function Project({ project }: ProjectProps) {

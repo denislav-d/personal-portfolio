@@ -1,12 +1,12 @@
 import Link from "next/link";
 
-type DescriptionBlockProps = {
+interface DescriptionBlockProps {
   title: string;
   description: string;
   link?: string;
   link_before?: string;
   link_after?: string;
-};
+}
 
 export default function DescriptionBlock({
   title,

@@ -1,4 +1,4 @@
-export type Project = {
+export interface ProjectType {
   id: number;
   title: string;
   link: string;
@@ -8,9 +8,42 @@ export type Project = {
   description: string;
   context_description: string;
   myrole_description: string;
+}
+
+export const animationFrameVariants = {
+  hidden: {
+    opacity: 0,
+    y: 50,
+  },
+  visible: {
+    opacity: 1,
+    y: 0,
+
+    transition: {
+      staggerChildren: 0.15,
+      duration: 0.3,
+      type: "spring",
+      damping: 14,
+    },
+  },
 };
 
-export const projects: Project[] = [
+export const animationItemVariants = {
+  hidden: {
+    opacity: 0,
+    y: 50,
+  },
+  visible: {
+    opacity: 1,
+    y: 0,
+
+    transition: {
+      duration: 0.3,
+    },
+  },
+};
+
+export const projects: ProjectType[] = [
   {
     id: 1,
     title: "spotlight",
