@@ -9,7 +9,7 @@ export default function About() {
     <section className="container z-10 mx-auto mb-20 mt-24 flex flex-col px-10 md:w-full md:min-w-[512px] md:max-w-xl lg:mt-36">
       <h1 className="text-title">about 👨🏻‍💻</h1>
       <p className="text-secondary mb-4">
-        my personal portfolio website where I showcase my projects and
+        this is my personal portfolio website where I showcase my projects and
         cotributions by creatively displaying them in my own minimal
         environment.
       </p>
@@ -19,6 +19,19 @@ export default function About() {
         initial="hidden"
         animate="visible"
       >
+        <motion.p
+          variants={animationItemVariants}
+          className="text-secondary mb-4"
+        >
+          as a person, I have always been impressed by good design - in both the
+          materialistic world and nature - the things which make you say{" "}
+          <span className="font-sans text-base font-normal italic tracking-normal ">
+            &apos;wow&apos;
+          </span>{" "}
+          and are beautiful to observe or simply just gaze into, without any
+          thoughts.
+        </motion.p>
+
         <motion.p
           variants={animationItemVariants}
           className="text-secondary mb-20"

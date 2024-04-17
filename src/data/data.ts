@@ -56,7 +56,7 @@ export const projects: ProjectType[] = [
     context_description:
       "'s initial idea set the foundation for the project, which me and my team further developed and realised. The application allows you to login with your Spotify account and provides you with recommendations of events which you might like based on your music taste. It also lets you choose the playlists to get recommendations on, since you might be sharing the account with someone else or are just in a specific mood. :)",
     myrole_description:
-      "my role for this project was assigned as the lead front-end developer. My responsibility was to create a consistent user interface and layout while implementing the elements from the designer-provided wireframes. By closely referencing these wireframes, I worked collaboratively with the designer to translate our stakeholder's vision into a functional and intuitive interface, ensuring alignment with the project's objectives and user expectations.",
+      "my role for this project was assigned as the lead frontend developer. My responsibility was to create a consistent user interface and layout while implementing the elements from the designer-provided wireframes. By closely referencing these wireframes, I worked collaboratively with the designer to translate our stakeholder's vision into a functional and intuitive interface, ensuring alignment with the project's objectives and user expectations.",
   },
   {
     id: 2,
@@ -70,19 +70,4 @@ export const projects: ProjectType[] = [
     myrole_description:
       "my role was to develop a responsive user interface, tailored for an online fashion store, with a primary focus on improving the accessibility of product and designer information. This involved creating a Python web scraper to extract existing product data, which was then saved in a .csv file, fetched and rendered onto the user interface. Additionally, I implemented sorting and filtering functionalities for products spanning various categories, enhancing the overall user experience by enabling smoother navigation and selection processes.",
   },
-  // {
-  //   id: 3,
-  //   title: "Website Project",
-  //   description:
-  //     "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor soluta doloribus sit assumenda hic facere.",
-  //   type: "Next.js",
-  // },
-  // {
-  //   id: 4,
-  //   title: "Website Project",
-  //   date: "May 31, 2023",
-  //   description:
-  //     "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor soluta doloribus sit assumenda hic facere.",
-  //   type: "React",
-  // },
 ];
