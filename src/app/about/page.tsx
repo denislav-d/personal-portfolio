@@ -24,7 +24,7 @@ export default function About() {
           className="text-secondary mb-4"
         >
           as a person, I have always been impressed by good design - in both the
-          materialistic world and nature - the things which make you say{" "}
+          materialistic world and nature. The things which make you say{" "}
           <span className="font-sans text-base font-normal italic tracking-normal ">
             &apos;wow&apos;
           </span>{" "}

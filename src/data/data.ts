@@ -1,7 +1,12 @@
+import vetemore_image from "@/../public/vetemore.png";
+import spotlight_image from "@/../public/spotlight.png";
+import { StaticImageData } from "next/image";
+
 export interface ProjectType {
   id: number;
   title: string;
   link: string;
+  image: StaticImageData;
   link_client?: string;
   link_before?: string;
   subheading: string;
@@ -48,6 +53,7 @@ export const projects: ProjectType[] = [
     id: 1,
     title: "spotlight",
     link: "spotlight",
+    image: spotlight_image,
     link_client: "https://citriclabs.xyz/",
     link_before: "citric labs",
     subheading: "personalized events, just a click away!",
@@ -62,6 +68,7 @@ export const projects: ProjectType[] = [
     id: 2,
     title: "vetemòre",
     link: "vetemore",
+    image: vetemore_image,
     subheading: "a response to my frustration as a fashion enthusiast...",
     description:
       "a divergence from typical high-fashion online stores, prioritizing design and delivering comprehensive information.",
