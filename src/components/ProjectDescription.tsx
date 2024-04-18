@@ -37,9 +37,7 @@ export default function ProjectDescription({
     },
     {
       id: 2,
-      content: (
-        <Image src={image} priority={false} alt={`${image} on phone images`} />
-      ),
+      content: <Image src={image} priority alt={`${image} on phone images`} />,
     },
     {
       id: 3,
