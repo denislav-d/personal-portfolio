@@ -14,8 +14,8 @@ export default function ProjectList() {
           whileInView={{ opacity: 1, y: 0 }}
           initial={{ opacity: 0, y: 50 }}
           transition={{
-            duration: 0.3,
-            delay: project.id * 0.15,
+            duration: 0.2,
+            delay: project.id * 0.1,
             type: "spring",
             damping: 14,
           }}
