@@ -29,7 +29,7 @@ export default function ProjectDescription({
       content: (
         <DescriptionBlock
           title="context"
-          link={link_before ? link_client : undefined}
+          link={link_before ? link_client : ""}
           link_before={link_before}
           description={context_description}
         />
