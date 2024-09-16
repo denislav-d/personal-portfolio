@@ -10,7 +10,7 @@ export default function About() {
       <h1 className="text-title">about 👨🏻‍💻</h1>
       <p className="text-secondary mb-4">
         my personal portfolio website where I showcase my projects and
-        cotributions by creatively displaying them in my own minimal
+        contributions by creatively displaying them in my own minimal
         environment.
       </p>
 
